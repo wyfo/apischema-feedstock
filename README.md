@@ -120,4 +120,5 @@ Feedstock Maintainers
 =====================
 
 * [@klauer](https://github.com/klauer/)
+* [@wyfo](https://github.com/wyfo/)
 
