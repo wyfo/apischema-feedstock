@@ -23,15 +23,6 @@ requirements:
     # dataclasses is only required for Python 3.6.  conda should be smart enough to not
     # install it for Python >=3.7 in this noarch build - I hope.
     - dataclasses
-  run_constrained:
-    # graphql-core is entirely optional for the core of apischema:
-    - graphql-core >=3.1.2
-    # The following are optional, used in the provided examples.
-    - pytest >=6.2.2
-    - pydantic >=1.7.3
-    - attrs >=20.3.0
-    - sqlalchemy >=1.3.23
-    - bson >=0.5.10
 
 test:
   imports:
