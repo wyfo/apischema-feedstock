@@ -1,5 +1,5 @@
 {% set name = "apischema" %}
-{% set version = "0.15.4" %}
+{% set version = "0.15.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/wyfo/apischema/archive/v{{ version }}.tar.gz
-  sha256: 4313e92bdb833fd4bb650c0a0ca62f5d12542def8aa20ec041b60fcd9c59eb04
+  sha256: 79eaf3fcbfc438ae03a1f6143d523efe9eec14fd74f39641f43f2b7ae22fcb0d
 
 build:
   noarch: python
-  number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -39,7 +39,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'JSON (de)serialization + GraphQL and JSON schema generation through python typing, with a spoonful of sugar.'
+  summary: JSON (de)serialization + GraphQL and JSON schema generation through python typing, with a spoonful of sugar.
 
 extra:
   recipe-maintainers:
