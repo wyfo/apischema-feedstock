@@ -1,5 +1,5 @@
 {% set name = "apischema" %}
-{% set version = "0.15.7" %}
+{% set version = "0.15.8" %}
 
 package:
   name: {{ name|lower }}
